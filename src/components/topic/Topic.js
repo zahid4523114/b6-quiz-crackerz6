@@ -1,15 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Topic = ({ topic }) => {
-  const { logo, name } = topic;
-  console.log(topic);
+  const { id, logo, name } = topic;
+  const navigate = useNavigate();
+  const handleNavigate = (id) => {
+    navigate(`/topic/${id}`);
+  };
+  // console.log(topic);
   return (
-    <div class="card bg-dark my-4" style={{ width: "18rem" }}>
-      <img src={logo} class="card-img-top" alt="..." />
-      <div class="card-body">
+    <div className="card bg-dark my-4" style={{ width: "18rem" }}>
+      <img src={logo} className="card-img-top" alt="..." />
+      <div className="card-body">
         <h4 className="text-white">{name}</h4>
-        <button className="btn btn-primary d-block container-fluid">
-          Explore
+        <button
+          onClick={() => handleNavigate(id)}
+          className="btn btn-primary d-block container-fluid"
+        >
+          Explore <i class="fa-solid fa-angles-right"></i>
         </button>
       </div>
     </div>
