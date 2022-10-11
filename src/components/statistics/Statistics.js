@@ -7,6 +7,7 @@ import {
   XAxis,
   YAxis,
   Tooltip,
+  ResponsiveContainer,
 } from "recharts";
 import "./Statistics.css";
 
@@ -15,20 +16,15 @@ const Statistics = () => {
   const rechartData = data.data;
   console.log(rechartData.data);
   return (
-    <div className="rechart-container">
-      <LineChart
-        className="rechart"
-        width={800}
-        height={500}
-        data={rechartData}
-      >
+    <ResponsiveContainer width="90%" height={400}>
+      <LineChart className="rechart" data={rechartData}>
         <Line type="monotone" dataKey="total" stroke="#8884d8" />
         <CartesianGrid stroke="#ccc" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
       </LineChart>
-    </div>
+    </ResponsiveContainer>
   );
 };
 
