@@ -1,5 +1,7 @@
 website name: Quiz ace
 
+project name: b6-quiz-crackerz
+
 live link: https://endearing-souffle-2e04aa.netlify.app/blog
 
 website features:{
