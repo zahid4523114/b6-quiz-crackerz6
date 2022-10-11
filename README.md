@@ -1,6 +1,6 @@
 website name: Quiz ace
 
-live link:
+live link: https://endearing-souffle-2e04aa.netlify.app/blog
 
 website features:{
 1.Responsive header with different routes.
