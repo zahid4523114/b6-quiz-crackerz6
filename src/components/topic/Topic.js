@@ -17,7 +17,7 @@ const Topic = ({ topic }) => {
           onClick={() => handleNavigate(id)}
           className="btn btn-primary d-block container-fluid"
         >
-          Explore <i class="fa-solid fa-angles-right"></i>
+          Explore <i className="fa-solid fa-angles-right"></i>
         </button>
       </div>
     </div>
