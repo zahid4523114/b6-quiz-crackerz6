@@ -7,7 +7,6 @@ export const TopicContext = createContext();
 const Main = () => {
   const topicsData = useLoaderData();
   const data = topicsData.data;
-  //   console.log(data);
   return (
     <TopicContext.Provider value={data}>
       <Header></Header>

@@ -24,7 +24,7 @@ const Quiz = ({ qus }) => {
           {question}
         </h5>
         <h5 onClick={correct} className="text-warning fs-3">
-          <i class="fa-solid fa-unlock"></i>
+          <i className="fa-solid fa-unlock"></i>
         </h5>
       </div>
       {options.map((option) => (

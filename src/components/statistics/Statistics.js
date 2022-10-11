@@ -14,7 +14,6 @@ import "./Statistics.css";
 const Statistics = () => {
   const data = useLoaderData();
   const rechartData = data.data;
-  console.log(rechartData.data);
   return (
     <ResponsiveContainer width="90%" height={400}>
       <LineChart className="rechart" data={rechartData}>
