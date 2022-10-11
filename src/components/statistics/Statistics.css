@@ -1,0 +1,16 @@
+.rechart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+/* .rechart {
+  width: 800px;
+  height: 500px;
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .rechart {
+    width: 400px;
+    height: 20px;
+  }
+} */
